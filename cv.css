@@ -1,90 +1,74 @@
-/*
-body{
-
+@font-face {
+    font-family: "Hoop";
+    src: url("images/fonts/typo-hoop/Typo\ Hoop_Regular_Demo.otf");
+  }
+@font-face {
+    font-family: "Happy";
+    src: url("images/fonts/happy/otf/happy-times-at-the-ikob.otf");
 }
-
-h1{
-    font-size: 3em;
+@font-face {
+    font-family: "Octarine";
+    src: url("images/fonts/OctarineFree/Octarine-Bold.otf");
 }
-
-#alignement{
-    display: flex;
+@font-face {
+    font-family: "Berton";
+    src: url("images/fonts/berton/Berton-Voyage-trial.ttf");
 }
-
-#center{
-    margin: auto;
-    flex-direction: column;
-    text-align: center;
+@font-face {
+    font-family: "Well";
+    src: url("images/fonts/wellbred/Well\ Bred\ Font\ by\ Situjuh\ \(7NTypes\).otf");
 }
-
-    article{
-        display: inline-block;
-        width: 49%;
-        text-align: start;
-    }
-        article h3{
-            text-align: center;
-        }
-
-blockquote{
-    border: 3px dashed gray;
-    padding: 5%;
-}
-*/
 #aboutme{
-    /*width: 300px;
-    height: auto;*/
     padding: 50px 10px 200px 10px;
     background-color: rgb(139, 151, 163);
     color: rgb(247, 244, 243);
-  
 }
 #photo{
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
 }
 blockquote{
     padding: 30px 0;
+    font-family: Well;
+    font-size: 2em;
+}
+span{
+    text-align: right;
 }
 ul{
     list-style: none;
 }
 ul li{
     padding-top: 7px;
+    font-family: Happy;
+    font-size: 1.5em;
 }
-/*
-    #photo{
-        background: url("images/gokuoncloud.png") 50% 20% no-repeat;
-        background-size: 170%;
-        width: 254px;
-        height: 200px;
-        border: 5px solid rgb(247, 244, 243);
-        border-radius: 100px 20px;
-        overflow: hidden;
-    }*/
-    /*
-    #contact{
-        list-style: none;   
-    }
-        #contact li{
-            margin: 20px;
-        }
-            #contact li a {
-                color: rgb(247, 244, 243);
-                text-decoration: unset;
-            }
-*/
-#poste{
-    /*
-    position: relative;
-    margin: auto;
 
-    width: 9%;*/
+#poste{
     padding: 150px 30px 20px 0;
     writing-mode: vertical-lr;
     background-color:  rgb(139, 151, 163);
-    color: rgb(247, 244, 243);/*
-    font-size: 2.5em;
-
-
-    */
+    color: rgb(247, 244, 243);
 }
+
+h1, h2{
+    font-family: Hoop;
+}
+h2{
+    letter-spacing: .2em;
+    font-weight: bold;
+}
+h3{
+    font-family: Octarine;
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+    #poste{
+        display: none;
+    }
+  }
+
+  @media screen  and (max-width: 979px) /* Tablet */ {
+    #poste{
+        display: none;
+    }
+  }
